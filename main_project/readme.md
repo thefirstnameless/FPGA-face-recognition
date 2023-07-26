@@ -16,7 +16,7 @@
 
 3. tailor模块是将在lcd分辨率小于摄像头分辨率的情况时，只取摄像头中心一块放入lcd屏中。如果lcd分辨率更大就顺从摄像头的分辨率。
 
-4. <img src="cmos_time.png" alt="替代文本" style="width: 300px; height: 200px;">
+4. <img src="cmos_time.png" alt="替代文本" style="width: 600px; height: 400px;">
 
 # Click to see I2C details Perso
 
