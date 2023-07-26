@@ -70,7 +70,7 @@ module cmos_capture_data(input rst_n,                    //复位信号
             end
         
         //帧有效标�?
-        always @(posedge cam_pclk or negedge rst_n) begin
+    always @(posedge cam_pclk or negedge rst_n) begin
             if (!rst_n)
                 frame_val_flag <= 1'b0;
             else if ((cmos_ps_cnt == WAIT_FRAME) && pos_vsync)
@@ -79,7 +79,7 @@ module cmos_capture_data(input rst_n,                    //复位信号
                 end
             
             //8 位数据转 16 �? RGB565 数据
-            always @(posedge cam_pclk or negedge rst_n) begin
+    always @(posedge cam_pclk or negedge rst_n) begin
                 if (!rst_n) begin
                     cmos_data_t <= 16'd0;
                     cam_data_d0 <= 8'd0;
@@ -98,7 +98,7 @@ module cmos_capture_data(input rst_n,                    //复位信号
                     end
                 end
                     //产生输出数据有效信号(cmos_frame_valid)
-                    always @(posedge cam_pclk or negedge rst_n) begin
+    always @(posedge cam_pclk or negedge rst_n) begin
                         if (!rst_n)
                             byte_flag_d0 <= 1'b0;
                         else
