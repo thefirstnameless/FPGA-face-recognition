@@ -16,7 +16,7 @@
 
 3. tailor模块是将在lcd分辨率小于摄像头分辨率的情况时，只取摄像头中心一块放入lcd屏中。如果lcd分辨率更大就顺从摄像头的分辨率。
 
-4. <img src="cmos_time.png" alt="替代文本" style="width: 800px; height: 400px;">
+4. ![guomienasai](pic/cmos_time.png)
 
 # Click to see I2C details Perso
 
@@ -27,3 +27,4 @@
 3. If i2c_done is included in the i2c_exec criteria, the value of i2c_exec is 0 when i2c_dri is working. Therefore, the i2c_cfg module does not give 1μs to 16 bits of data, but queries whether the i2c_done is higher every 1μs
 
 4. The above are all lies
+
